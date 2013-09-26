@@ -129,6 +129,7 @@ def custom_remove(input_list, value):
     for i in input_list:
         if i == value:
             del input_list[custom_index(input_list, i)]
+            break
 
 def custom_pop(input_list):
     """custom_pop(input_list) imitates input_list.pop()"""
