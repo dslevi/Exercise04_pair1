@@ -1,7 +1,7 @@
 
 """
 Part 1: Fundamental operations on lists
----------------------------------------
+--------------------------------------
 
 The fundamental operations on lists in Python are those that are part of the
 language syntax and/or cannot be implemented in terms of other list operations:
