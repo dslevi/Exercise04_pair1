@@ -160,13 +160,14 @@ class TestListOperations(unittest.TestCase):
         self.assertEqual(self.multiples, [-3, 0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
 
     def test_2_E_custom_remove(self):
+    	# NOTES TEST HAS AN ERROR
         custom_remove(self.months, 'Jul')
         custom_remove(self.notes, 'Do')
         custom_remove(self.multiples, 27)
 
         self.assertEqual(self.months, ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
                                        'Aug', 'Sep', 'Oct', 'Nov', 'Dec'])
-        self.assertEqual(self.notes, ['Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do'])
+        self.assertEqual(self.notes, ['Re', 'Mi', 'Fa', 'So', 'La', 'Ti'])
         self.assertEqual(self.multiples, [0, 3, 6, 9, 12, 15, 18, 21, 24])
 
     def test_2_F_custom_pop(self):
